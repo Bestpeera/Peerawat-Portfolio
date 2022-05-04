@@ -1,4 +1,43 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans:300,400,600,700,700i|Montserrat:200,300,400,500,600,700,800&display=swap");
+#walking {
+    width: 400px;
+    height: 105px;
+    background: url("assets/img/walk_sprite.png");
+    animation: walk 1s steps(4) infinite;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img.right {
+    display: block;
+    margin-left: auto;
+}
+
 .center {
     text-align: center;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: rgb(221, 240, 246);
+    padding: 100px;
+}
+
+.middle {
+    background-color: white;
+    padding: 100px;
+}
+
+h1 {
+    font-weight: bold;
 }
