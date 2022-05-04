@@ -1,9 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans:300,400,600,700,700i|Montserrat:200,300,400,500,600,700,800&display=swap");
-#walking {
-    width: 400px;
-    height: 105px;
-    background: url("assets/img/walk_sprite.png");
-    animation: walk 1s steps(4) infinite;
+.walking {
+    height: 330px;
+    width: 320px;
+    background: url("./img/james_sprite.png");
+    animation: walk 0.5s steps(3) infinite;
+}
+
+@keyframes walk {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+@keyframes forward {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(1200px);
+    }
 }
 
 img.center {
@@ -11,6 +29,12 @@ img.center {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.animation-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.right {
